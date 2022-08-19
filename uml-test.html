@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unified Modeling Languague Theory Test</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">hint</h4>
+            </div>
+            <div class="modal-body">
+                Please enter required information!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<form action="#" method="post" role="form" autocomplete="off">
+<div class="text-center page-header">
+    <h1>Unified Modeling Language Theory Test</h1>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="col-md-4">test subjects:&nbsp;&nbsp;Unified Modeling Language UML</div>
+        <div class="col-md-4">time:&nbsp;&nbsp;100 minute</div>
+        <div id="scores" class="col-md-4">Score:&nbsp;&nbsp;<span id="score"></span></div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row form-inline">
+            <div id="classs" class="col-md-4 form-group">
+                <label class="control-label">Class (required):
+                    <input class="form-control" type="text" id="class">
+                </label>
+            </div>
+            <div id="stunos" class="col-md-4 form-group">
+                <label class="control-label">Student ID (required):
+                    <input class="form-control" type="text" id="stuno">
+                </label>
+            </div>
+            <div id="names" class="col-md-4 form-group">
+                <label class="control-label">Name (required):
+                    <input class="form-control" type="text" id="name">
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>1. Fill-in-the-blank questions (5 points for each blank, 20 points in total）</h4>
+    </div>
+    <div class="panel-body">
+        <ol>
+            <li>
+                <div class="form-group" id="fillblankdiv1">
+                    <label class="control-label">The full Chinese name of UML is:</label>
+                    <div class="form-group form-inline">
+                        <input class="form-control" type="text" name="fillblank1" >
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="form-group" id="fillblankdiv1">
+                    <label for="fillblank2_1" class="control-label">The most prominent features of the object are: </label>
+                    <div class="form-inline">
+                         <input class="form-control" type="text" id="fillblank2_1" name="fillblank2">
+                         <input class="form-control" type="text" name="fillblank2">
+                         <input class="form-control" type="text" name="fillblank2">
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>2. Multiple-choice questions (10 points for each question, 20 points in total)</h4>
+    </div>
+    <div class="panel-body">
+        <ol>
+            <li>
+                <div class="form-group">
+                    <label class="control-label">The relationship between UML and software engineering is: </label>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="radio" name="choice1" value="a">a.UML stands for software engineering
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="radio" name="choice1" value="b">b. UML participates in several stages of the software development process in software engineering
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="radio" name="choice1" value="c">c. UML has nothing to do with software engineering
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="radio" name="choice1" value="d">d.UML is part of software engineering
+                        </label>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="form-group">
+                    <label class="control-label">Java language support: </label>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="radio" name="choice2" value="a">a. Single inheritance
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="radio" name="choice2" value="b">b. Multiple inheritance
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="radio" name="choice2" value="c">c. Both single inheritance and multiple inheritance are supported
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="radio" name="choice2" value="d">d. Neither single inheritance nor multiple inheritance is supported
+                        </label>
+                    </div>
+                </div>
+            </li>
+
+        </ol>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>3. Multiple-choice questions (10 points for each question, 20 points in total）</h4>
+    </div>
+    <div class="panel-body">
+        <ol>
+            <li>
+                <div class="form-group">
+                    <label class="control-label">The granularity of use cases is divided into which of the following three.</label>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="checkbox" name="multiplechoice1" value="a">a. Overview level
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="checkbox" name="multiplechoice1" value="b">b. Demand level
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="checkbox" name="multiplechoice1" value="c">c. User target level
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="checkbox" name="multiplechoice1" value="d">d. Sub-function level
+                        </label>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="form-group">
+                    <label class="control-label">A class diagram consists of which of the following three parts.</label>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="checkbox" name="multiplechoice2" value="a">a.Name
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="checkbox" name="multiplechoice2" value="b">b.Attribute
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="checkbox" name="multiplechoice2" value="c">c.Operation
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label class="control-label">
+                            <input type="checkbox" name="multiplechoice2" value="d">d.Function
+                        </label>
+                    </div>
+                </div>
+            </li>
+
+        </ol>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>4. True or false questions (10 points for each question, 20 points in total）</h4>
+    </div>
+    <div class="panel-body">
+        <ol>
+            <li>
+                <div class="form-group">
+                    <label class="control-label">Use case diagrams are only used to communicate and communicate with customers and to determine requirements.</label>
+                    <label><input type="radio" name="judge1" value="V">
+                        <span class="glyphicon glyphicon-ok text-success"></span>
+                    </label>
+                    <label><input type="radio" name="judge1" value="X">
+                        <span class="glyphicon glyphicon-remove text-danger"></span>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <label class="control-label">In a state diagram, any number of terminal states are allowed in a state diagram.</label>
+                    <label><input type="radio" name="judge2" value="V">
+                        <span class="glyphicon glyphicon-ok text-success"></span>
+                    </label>
+                    <label><input type="radio" name="judge2" value="X">
+                        <span class="glyphicon glyphicon-remove text-danger"></span>
+                    </label>
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>5. Short answer questions (20 points for each question, 20 points in total）</h4>
+    </div>
+    <div class="panel-body">
+        <ol>
+            <li>
+                <div class="form-group"><label class="control-label">Briefly describe what a model is and how it behaves? </label>
+                    <textarea class="form-control" rows="6" name="shortanswer1"></textarea>
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="text-center">
+    <input id="mybut" class="btn btn-primary" type="submit" value="Calculate the score" >
+</div>
+
+</form>
+
+<script type="text/javascript" src="./lib/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./lib/lodash-2.4.1/lodash.js"></script>
+<script type="text/javascript" src="./lib/lodash-2.4.1/lodash.compat.js"></script>
+
+<script type="text/javascript" src="./script/question.js"></script>
+<script type="text/javascript" src="./script/gapfill-question.js"></script>
+<script type="text/javascript" src="./script/select-question.js"></script>
+<script type="text/javascript" src="./script/shortanswer-question.js"></script>
+<script type="text/javascript" src="./script/check-answer.js"></script>
+<script src="./script/bootstrap.min.js"></script>
+
+</div>
+
+</body>
+</html>
